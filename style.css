@@ -1,0 +1,29 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: #a15843;
+}
+
+body {
+    background:  #F5F5DC;
+    color: #ffffff;
+}
+html {
+    font;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-weight: 500;
+}
+a {
+    text-decoration: none;
+    /*Retirar decoração <a>*/
+}
+ul {
+    list-style: none;
+    /*Retirar decoração <li>*/
+}
+nav {
+    margin: auto;
+    display: flex;
+    flex-direction: row;
+}
