@@ -1,51 +1,143 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Plataforma de gestão de restaurante</title>
-    <meta name="description"
-    content="Oferecemos o melhor da culinária peça já o seu prato">
-    <link rel="stylesheet" type="text/css" href="style.css">
-</head>
-<body>
-    <header>
-        <span>Plataforma de gestão de restaurante</span>
-        <hr>
-        <nav>
-            <ul>
-                <li>
-                    <p>
-                        &#x1F4E8;
-                    <a href="Gestão de reservas.html">Gestão de reservas</a>
-                    </p>
-                </li>
-                <li>
-                    <p>
-                        &#x1F4E6;
-                    <a href="Controle de estoque.html"> Controle de estoque</a>
-                    </p>
-                </li>
-                <li>
-                    <p>
-                        &#x1F4DD;
-                    <a href="Gestão de pedidos.html"> Gestão de pedidos</a>
-                    </p>
-                </li>
-                <li>
-                    <p>
-                    &#x1F4B2;
-                    <a href="Controle de finanças.html">Controle de finanças</a>
-                    </p>
-                </li>
-                <li>
-                    <P>
-                        &#x1F58A;
-                    <a href="Relatórios gerenciais.html">Relatórios gerenciais</a>
-                    </p>
-                </li>
-            </ul>
-        </nav>
-    </header>
-</body>
-</html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Gestão de Restaurante¹</title>
+        <link rel="stylesheet" type="text/css" href="/style.css">
+    </head>
+    <body>
+        <!--------------------------------------------
+          *  Área de Cabeçahlo                        
+          *------------------------------------------->
+        <header>
+            <nav>
+                <span class="logo">Gestão de restaurante</span>
+                <ul class="menu">
+                    <li><a href="Reservas.html">Reservas</a></li>
+                    <li><a href="Estoque.html">Estoque</a></li>
+                    <li><a href="Pedidos.html">Pedidos</a></li>
+                    <li><a href="Finanças.html">Finanças</a></li>
+                    <li><a href="Gerenciais.html">Gerenciais</a></li>
+                </ul>
+            </nav>
+        </header>
+        <!--------------------------------------------
+          *     Área do Main                      
+          *------------------------------------------->
+        <main>
+            <!-- Section para Hero-->
+            <div class="container-hero">
+                <section class="hero">
+                    <!-- Parte 1 da Hero: -->
+                    <header class="hero-parte1-principal">
+                        <h1>Faça já a sua reserva!</h1>
+                        <hr>
+                        <h2 class="hero-subtitulo">
+                            Explore os pratos mais pedidos:
+                        </h2>
+                    </header>
+                    <!-- Parte 2 da Hero: IMAGENS -->
+                    <div class="hero-parte2-container-imagens">
+                       <figure><img src="fotos/restaurante.jpg"  alt="imagem ilustrativa de restaurante" ></figure>
+                    </div>
+            </div>
+                </section>
+            <!-- Section para Receitas-->
+            <section class="receitas">
+                <!-- Criar o Header -->
+                <header class="receita-header-cabecalho">
+                    <span class="destaque-marron">O melhor da culinária brasileira</span>
+                    <h2 class="receita-header-titulo-h2">Confira os ultimos pratos adicionados</h2>
+                    <p class="receita-header-subtitulo-p">Faça já sua reserva</p>
+                    <hr class="receita-hr">
+                </header>
+                <!--DIV para AGRUPAR os Cards-->
+                <div class="receitas-card-container">
+                    <!--Div do CARD1-->
+                    <div clas="receitas-card">
+                        <header class="receitas-card-cabecalho">
+                            <div class="receitas-card-cabecalho-parte-I">
+                                <span class="destaque mostarda">Em Alta</span>
+                                <h3 class="receitas-card-titulo">Feijoada</h3>
+                            </div>
+                            <div>
+                                <p class="receita-card-avaliacao">Extraordinário 4/4</p>
+                            </div>
+                        </header>
+                        <p class="receita-card-descricao"> Uma bebida ideal para os amantes de doce e cremosidade.</p>
+                        <!--DIV para incluir o autor (imagem/nome)-->
+                        <div class="receita-card-autor">
+                            <figure><img src="fotos/feijoada.jpg"></figure>
+                        </div>
+                    </div>
+                     <!--Div do CARD2-->
+                     <div clas="receitas-card">
+                        <header class="receitas-card-cabecalho">
+                            <div class="receitas-card-cabecalho-parte-I">
+                                <span class="destaque mostarda">Novo</span>
+                                <h3 class="receitas-card-titulo">Strogonoff</h3>
+                            </div>
+                            <div>
+                                <p class="receita-card-avaliacao">Bom 3/4</p>
+                            </div>
+                        </header>
+                        <p class="receita-card-descricao"> Para que gosta de café amargo.</p>
+                        <!--DIV para incluir o autor (imagem/nome)-->
+                        <div class="receita-card-autor">
+                            <img src="milanesa.jpg">
+                        </div>
+                    </div>
+                    <!--Div do CARD3-->
+                    <div clas="receitas-card">
+                        <header class="receitas-card-cabecalho">
+                            <div class="receitas-card-cabecalho-parte-I">
+                                <span class="destaque mostarda">Em Alta</span>
+                                <h3 class="receitas-card-titulo">Bife à milanesa</h3>
+                            </div>
+                            <div>
+                                <p class="receita-card-avaliacao">Extraordinário 4/4</p>
+                            </div>
+                        </header>
+                        <p class="receita-card-descricao"> Uma bebida ideal para os amantes de doce e cremosidade.</p>
+                        <!--DIV para incluir o autor (imagem/nome)-->
+                        <div class="receita-card-autor">
+                            <img src="assets/avatar3.PNG">
+                        </div>
+                    </div>
+                    <div clas="receitas-card">
+                        <header class="receitas-card-cabecalho">
+                            <div class="receitas-card-cabecalho-parte-I">
+                                <span class="destaque mostarda">Em Alta</span>
+                                <h3 class="receitas-card-titulo">Bife à parmegiana</h3>
+                            </div>
+                            <div>
+                                <p class="receita-card-avaliacao">Extraordinário 4/4</p>
+                            </div>
+                        </header>
+                        <p class="receita-card-descricao">Uma bebida ideal para os amantes de doce e cremosidade.</p>
+                        <div class="receita-card-autor">
+                            <img src="assets/avatar4.PNG">
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="carregar-mais-pratos">
+                <span class="carregar-mais-pratos-span">
+                    <h5>
+                        Carregar mais pratos...
+                    </h5>
+                </span>
+            </section>
+        </main>
+        <!--------------------------------------------
+          *     Área do Footer                      
+          *------------------------------------------->
+        <footer>
+            <p class="footer-copy">© 2024</p>
+            <p class="footer-autor">Todos direitos reservados</p>
+    
+        </footer>
+    </body>
+    
+    </html>
