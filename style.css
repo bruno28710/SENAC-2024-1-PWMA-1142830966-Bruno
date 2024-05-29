@@ -1,4 +1,4 @@
-/*Resetando configuração padrão do CSS*/
+/* Resetando configuração padrão do CSS */
 * {
     margin: 0;
     padding: 0;
@@ -8,55 +8,51 @@
 body {
     background: #a52a2a;
     color: #a00f2d;
-    /*cor principaal do texto */
+    /* cor principal do texto */
 }
 
 html {
-    font-family: Inter sans-serif;
-    /*família de texto padrão*/
+    font-family: Inter, sans-serif;
+    /* família de texto padrão */
     font-weight: 500;
-    /*Peso padrão*/
-
+    /* Peso padrão */
 }
 
 a {
-    color:#f5f5dc;
+    color: #f5f5dc;
     text-decoration: none;
-    /*Retirar decoração <a>*/
+    /* Retirar decoração <a> */
 }
 
 a:hover {
-    color:black;
+    color: black;
     text-decoration: underline;
 }
 
 ul {
     list-style: none;
-    /*Retirar decoração <li>*/
+    /* Retirar decoração <li> */
 }
 
 nav {
     max-width: 1120px;
-    /*largura máxima*/
+    /* largura máxima */
     margin: auto;
     padding: 1.5rem 10rem;
-    /*Acima/abaixo | Laterais*/
+    /* Acima/abaixo | Laterais */
 
     display: flex;
     flex-direction: row;
-    /*isto já o padrão*/
+    /* isto já o padrão */
     justify-content: space-between;
-    /*Separa os 3 conjuntos de lementos*/
+    /* Separa os 3 conjuntos de elementos */
     align-items: center;
-    /*alinhar elementos ao centro (horizontal)*/
-
+    /* alinhar elementos ao centro (horizontal) */
 }
-
-
 
 .logo {
     text-align: left;
-    color:#f5f5dc;
+    color: #f5f5dc;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     font-size: 2rem;
     font-weight: 600;
@@ -67,7 +63,7 @@ nav {
     display: flex;
     flex-direction: row;
     gap: 1.5rem;
-    /*separa os elementos da linha*/
+    /* separa os elementos da linha */
 }
 
 /* ------------------Tag main */
@@ -81,14 +77,13 @@ main {
    *------------------------------------------------------*
 */
 .hero {
-
     max-width: 1120px;
-    /*lagura máxima*/
+    /* largura máxima */
     height: 60vh;
-    /* altura 60% proporcional à tela (navegador)*/
+    /* altura 60% proporcional à tela (navegador) */
 
     display: flex;
-    /*organiza parte I e Parte II*/
+    /* organiza parte I e Parte II */
     flex-direction: row;
     justify-content: space-between;
     gap: 6rem;
@@ -120,15 +115,13 @@ main {
 }
 
 .container-hero {
-    background:#f5f5dc;
+    background: #f5f5dc;
 }
-
-
 
 h1 {
     font-family: Montserrat;
     font-size: 3.5rem;
-    /*56px = 3.5rem*/
+    /* 56px = 3.5rem */
     font-weight: 800;
 }
 
@@ -140,14 +133,14 @@ hr {
     color: #a00f2d;
     font-family: Inter;
     font-size: 1.5rem;
-    /* 24px = 1.5rem*/
+    /* 24px = 1.5rem */
     font-weight: 400;
 }
 
 .receitas {
     display: flex;
     flex-direction: column;
-    max-width: 1120px;
+    max-width: 1300px;
     padding: 3rem 2rem;
     margin: auto;
 }
@@ -156,16 +149,11 @@ hr {
     display: flex;
     flex-direction: column;
     gap: 0.5rem;
-    margin: top 5px;;
+    margin-top: 5px;
 }
 
-.receita-hr{
-   border-color: #fff2e7;
-}
-
-.destaque-marron{
-    color: #fff2e7;
-
+.receita-hr {
+    border-color: #fff2e7;
 }
 
 .receita-header-titulo-h2 {
@@ -175,150 +163,54 @@ hr {
     color: #fff2e7;
 }
 
-.receita-header-subtitulo-p {
-    font-family: Inter;
-    font-size: 1rem;
-    font-weight: 400;
-    color: #fff2e7;
-}
-
-.receitas-card-container {
-    padding: 0rem 10rem;
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    gap: 2rem;
-}
-
-.receitas-card {
-    background: #241a1c;
+.carousel-container {
+    background: #a00f2d;
     padding: 2rem;
     border-radius: 0.5rem;
+    margin-top: 2rem;
+}
+
+.carousel {
     display: flex;
-    flex-direction: column;
+    overflow-x: auto;
     gap: 2rem;
-    flex-basis: 29rem;
-    border-top:10px ;
 }
 
-.receitas-card-cabecalho {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: end;
-}
-
-.receitas-card-cabecalho-parte-I {
-    display: flex;
-    flex-direction: column;
-    gap: 0.5rem;
-    border-top:10px;
-}
-
-.receitas-card-titulo {
-    color: #fff2e7;
-    font-family: Montserrat;
-    font-size: 1.5rem;
-    font-weight: 700;
-}
-
-.receita-card-avaliacao {
-    color: #756a67;
-    font-family: Inter;
-    font-size: 1rem;
-    font-style: normal;
-    font-weight: 500;
-}
-
-.receita-card-descricao {
-    color: #c7bab3;
-    font-family: Inter;
-    font-size: 1rem;
-    font-style: normal;
-    font-weight: 400;
-}
-
-.receita-card-autor {
-    display: flex;
-}
-.receita-card-autor > img{
-    border-radius: 5rem;
-    width: 100%;
+.carousel-item {
+    min-width: 250px;
+    background: #fff2e7;
+    padding: 1rem;
     border-radius: 0.5rem;
+    text-align: center;
+}
 
+.carousel-item img {
+    max-width: 100%;
+    border-radius: 0.5rem;
 }
-.receita-card-autor{
-    color: #c7bab3;
-    font-family: Inter;
-    font-size: 1rem;
-    font-weight: 600;
-}
-/*-------------------------------*/
 
 /* Estilo para o rodapé */
 footer {
-    background-color:#f5f5dc; /* Cor de fundo cinza */
-    padding: 20px; /* Espaçamento interno */
-    text-align: center; /* Alinhamento de texto centralizado */
-  }
- 
-  /* Estilo para o texto de direitos autorais */
-  .footer-copy {
-    font-size: 14px; /* Tamanho da fonte */
-    color: #a00f2d; /* Cor do texto */
-  }
- 
-  /* Estilo para o texto de descrição */
-  .footer-autor {
-    font-size: 12px; /* Tamanho da fonte */
-    color: #a00f2d; /* Cor do texto */
-  }
- 
-/*---------------------------------*/
-/* Estilo para a seção */
-.carregar-mais-receitas {
-    background-color: #f9f9f9; /* Cor de fundo */
-    padding: 20px; /* Espaçamento interno */
-    text-align: center; /* Alinhamento de texto centralizado */
-  }
- 
-  /* Estilo para o span dentro da seção */
-  .carregar-mais-receitas-span {
-    display: inline-block; /* Para que as propriedades de largura e altura funcionem */
-    background-color: #3498db; /* Cor de fundo azul */
-    color: #fff; /* Cor do texto */
-    padding: 10px 20px; /* Espaçamento interno */
-    border-radius: 5px; /* Borda arredondada */
-    cursor: pointer; /* Mostrar o cursor como ponteiro ao passar por cima */
-  }
- 
-  /* Estilo para o título dentro do span */
-  .carregar-mais-receitas-span h5 {
-    margin: 0; /* Remover margem padrão */
-    font-size: 16px; /* Tamanho da fonte */
-  }
-
-.carregar-mais-pratos, span{
-    color:#f5f5dc;
+    background-color: #f5f5dc;
+    /* Cor de fundo */
+    padding: 20px;
+    /* Espaçamento interno */
+    text-align: center;
+    /* Alinhamento de texto centralizado */
 }
 
-/*-------------------------------*/
-.botao-container{
-    width: 100%;
-    max-width: 1120px;
-   
-
-}
-button{
-    border: none;
-    padding: 0.1rem;
-    border-radius: 0.1;
-
-}
-.marron {
-    color: #A45A49
+/* Estilo para o texto de direitos autorais */
+.footer-copy {
+    font-size: 14px;
+    /* Tamanho da fonte */
+    color: #a00f2d;
+    /* Cor do texto */
 }
 
-.mostarda {
-    color: #e7a80e
+/* Estilo para o texto de descrição */
+.footer-autor {
+    font-size: 12px;
+    /* Tamanho da fonte */
+    color: #a00f2d;
+    /* Cor do texto */
 }
