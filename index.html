@@ -3,8 +3,9 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Gestão de Restaurante¹</title>
+        <title>Gestão de Restaurante</title>
         <link rel="stylesheet" type="text/css" href="/style.css">
+        <link rel="icon" href="/fotos/png-resturante.png" type="image/x-icon">
     </head>
     <body>
         <!--------------------------------------------
@@ -41,93 +42,59 @@
                     <div class="hero-parte2-container-imagens">
                        <figure><img src="fotos/restaurante.jpg"  alt="imagem ilustrativa de restaurante" ></figure>
                     </div>
-            </div>
                 </section>
+            </div>
             <!-- Section para Receitas-->
             <section class="receitas">
                 <!-- Criar o Header -->
                 <header class="receita-header-cabecalho">
-                    <span class="destaque-marron">O melhor da culinária brasileira</span>
-                    <h2 class="receita-header-titulo-h2">Confira os ultimos pratos adicionados</h2>
-                    <p class="receita-header-subtitulo-p">Faça já sua reserva</p>
+                    <h2 class="receita-header-titulo-h2">Principais pratos e bebidas</h2>
                     <hr class="receita-hr">
                 </header>
-                <!--DIV para AGRUPAR os Cards-->
-                <div class="receitas-card-container">
-                    <!--Div do CARD1-->
-                    <div clas="receitas-card">
-                        <header class="receitas-card-cabecalho">
-                            <div class="receitas-card-cabecalho-parte-I">
-                                <span class="destaque mostarda">Em Alta</span>
-                                <h3 class="receitas-card-titulo">Feijoada</h3>
-                            </div>
-                            <div>
-                                <p class="receita-card-avaliacao">Extraordinário 4/4</p>
-                            </div>
-                        </header>
-                        <p class="receita-card-descricao"> Uma bebida ideal para os amantes de doce e cremosidade.</p>
-                        <!--DIV para incluir o autor (imagem/nome)-->
-                        <div class="receita-card-autor">
-                            <figure><img src="fotos/feijoada.jpg"></figure>
+                <!-- Carrossel de Pratos -->
+                <div class="carousel-container" style="background: #f5f5dc;">
+                    <h3>Pratos</h3>
+                    <div class="carousel" id="carousel-pratos">
+                        <div class="carousel-item">
+                            <img src="fotos/feijoada.jpg" alt="Feijoada">
+                            <p>Feijoada: Um clássico brasileiro feito com feijão preto e carnes variadas.</p>
                         </div>
-                    </div>
-                     <!--Div do CARD2-->
-                     <div clas="receitas-card">
-                        <header class="receitas-card-cabecalho">
-                            <div class="receitas-card-cabecalho-parte-I">
-                                <span class="destaque mostarda">Novo</span>
-                                <h3 class="receitas-card-titulo">Strogonoff</h3>
-                            </div>
-                            <div>
-                                <p class="receita-card-avaliacao">Bom 3/4</p>
-                            </div>
-                        </header>
-                        <p class="receita-card-descricao"> Para que gosta de café amargo.</p>
-                        <!--DIV para incluir o autor (imagem/nome)-->
-                        <div class="receita-card-autor">
-                            <img src="milanesa.jpg">
+                        <div class="carousel-item">
+                            <img src="fotos/strogonoff.jpg" alt="Strogonoff">
+                            <p>Strogonoff: Um prato cremoso de origem russa, feito com carne e molho especial.</p>
                         </div>
-                    </div>
-                    <!--Div do CARD3-->
-                    <div clas="receitas-card">
-                        <header class="receitas-card-cabecalho">
-                            <div class="receitas-card-cabecalho-parte-I">
-                                <span class="destaque mostarda">Em Alta</span>
-                                <h3 class="receitas-card-titulo">Bife à milanesa</h3>
-                            </div>
-                            <div>
-                                <p class="receita-card-avaliacao">Extraordinário 4/4</p>
-                            </div>
-                        </header>
-                        <p class="receita-card-descricao"> Uma bebida ideal para os amantes de doce e cremosidade.</p>
-                        <!--DIV para incluir o autor (imagem/nome)-->
-                        <div class="receita-card-autor">
-                            <img src="assets/avatar3.PNG">
+                        <div class="carousel-item">
+                            <img src="fotos/milanesa.jpg" alt="Bife à milanesa">
+                            <p>Bife à milanesa: Carne empanada e frita, servida com acompanhamentos variados.</p>
                         </div>
-                    </div>
-                    <div clas="receitas-card">
-                        <header class="receitas-card-cabecalho">
-                            <div class="receitas-card-cabecalho-parte-I">
-                                <span class="destaque mostarda">Em Alta</span>
-                                <h3 class="receitas-card-titulo">Bife à parmegiana</h3>
-                            </div>
-                            <div>
-                                <p class="receita-card-avaliacao">Extraordinário 4/4</p>
-                            </div>
-                        </header>
-                        <p class="receita-card-descricao">Uma bebida ideal para os amantes de doce e cremosidade.</p>
-                        <div class="receita-card-autor">
-                            <img src="assets/avatar4.PNG">
+                        <div class="carousel-item">
+                            <img src="fotos/parmegiana.jpg" alt="Bife à parmegiana">
+                            <p>Bife à parmegiana: Carne empanada com molho de tomate e queijo derretido.</p>
                         </div>
                     </div>
                 </div>
-            </section>
-            <section class="carregar-mais-pratos">
-                <span class="carregar-mais-pratos-span">
-                    <h5>
-                        Carregar mais pratos...
-                    </h5>
-                </span>
+                <!-- Carrossel de Bebidas -->
+                <div class="carousel-container" style="background: #f5f5dc;">
+                    <h3>Bebidas</h3>
+                    <div class="carousel" id="carousel-bebidas">
+                        <div class="carousel-item">
+                            <img src="fotos/caipirinha.jpg" alt="Caipirinha">
+                            <p>Caipirinha: Bebida brasileira feita com limão, açúcar, gelo e cachaça.</p>
+                        </div>
+                        <div class="carousel-item">
+                            <img src="fotos/suco.jpg" alt="Suco natural">
+                            <p>Suco natural: Opção refrescante e saudável, feito com frutas frescas.</p>
+                        </div>
+                        <div class="carousel-item">
+                            <img src="fotos/refrigerante.jpg" alt="Refrigerante">
+                            <p>Refrigerante: Variedade de sabores para acompanhar suas refeições.</p>
+                        </div>
+                        <div class="carousel-item">
+                            <img src="fotos/cafe.jpg" alt="Café">
+                            <p>Café: Bebida quente para finalizar sua refeição com chave de ouro.</p>
+                        </div>
+                    </div>
+                </div>
             </section>
         </main>
         <!--------------------------------------------
@@ -135,9 +102,9 @@
           *------------------------------------------->
         <footer>
             <p class="footer-copy">© 2024</p>
+            <p class="footer-autor">Plataforma de Gestão de restaurante</p>
             <p class="footer-autor">Todos direitos reservados</p>
-    
         </footer>
+        <script src="carousel.js"></script>
     </body>
-    
-    </html>
+</html>
