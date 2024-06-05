@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Gestão de Restaurante</title>
+        <link rel="stylesheet" type="text/css" href="/style.css">
+        <link rel="icon" href="/fotos/png-resturante.png" type="image/x-icon">
+    </head>
+    <body>
+        <!--------------------------------------------
+          *  Área de Cabeçahlo                        
+          *------------------------------------------->
+        <header>
+            <nav>
+                <span class="logo">Gestão de restaurante</span>
+                <ul class="menu">
+                    <li><a href="reservas.html">Reservas</a></li>
+                    <li><a href="estoque.html">Estoque</a></li>
+                    <li><a href="pedidos.html">Pedidos</a></li>
+                </ul>
+            </nav>
+        </header>
+        <!--------------------------------------------
+          *     Área do Main                      
+          *------------------------------------------->
+        <main>
+            <!-- Section para Hero-->
+            <div class="container-hero">
+                <section class="hero">
+                    <!-- Parte 1 da Hero: -->
+                    <header class="hero-parte1-principal">
+                        <h1>Faça já a sua reserva!</h1>
+                        <hr>
+                        <h2 class="hero-subtitulo">
+                            Explore os pratos mais pedidos:
+                        </h2>
+                    </header>
+                    <!-- Parte 2 da Hero: IMAGENS -->
+                    <div class="hero-parte2-container-imagens">
+                       <figure><img src="fotos/restaurante.jpg"  alt="imagem ilustrativa de restaurante" ></figure>
+                    </div>
+                </section>
+            </div>
+            <!-- Section para Receitas-->
+            <section class="receitas">
+                <!-- Criar o Header -->
+                <header class="receita-header-cabecalho">
+                    <h2 class="receita-header-titulo-h2">Principais pratos e bebidas</h2>
+                    <hr class="receita-hr">
+                </header>
+                <!-- Carrossel de Pratos -->
+                <div class="carousel-container" >
+                    <h3>Pratos</h3>
+                    <div class="carousel" id="carousel-pratos">
+                        <div class="carousel-item">
+                            <a href="pedidos.html?item=Feijoada" >
+                            <img src="fotos/feijoada.jpg" alt="Feijoada">   </a>
+                            <p>Feijoada: Um clássico brasileiro feito com feijão preto e carnes variadas.</p>
+                        </div>
+                        <div class="carousel-item">
+                            <a href="pedidos.html?item=Strogonoff" > 
+                                <img src="fotos/strogonoff.jpg" alt="Strogonoff">
+                            </a>
+                            <p>Strogonoff: Um prato cremoso de origem russa, feito com carne e molho especial.</p>
+                        </div>
+                        <div class="carousel-item">
+                            <a href="pedidos.html?item=Bife à milanesa" >
+                                <img src="fotos/milanesa.jpg" alt="Bife à milanesa">
+                            </a>
+                            <p>Bife à milanesa: Carne empanada e frita, servida com acompanhamentos variados.</p>
+                        </div>
+                        <div class="carousel-item">
+                            <a href="pedidos.html?item=Bife à parmegiana" >
+                                <img src="fotos/parmegiana.jpg" alt="Bife à parmegiana">
+                            </a>
+                            <p>Bife à parmegiana: Carne empanada com molho de tomate e queijo derretido.</p>
+                        </div>
+                        <div class="carousel-item">
+                            <a href="pedidos.html?item=Lasanha" >
+                                <img src="/fotos/lasanha.jpg" alt="Lasanha">
+                            </a>
+                            <p>lasanha ao forno, feito com recheio (queijo, presunto, carne moída ou outros) e molho.</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- Carrossel de Bebidas -->
+                <div class="carousel-container" >
+                    <h3>Bebidas</h3>
+                    <div class="carousel" id="carousel-bebidas">
+                        <div class="carousel-item">
+                            <a href="pedidos.html?item=Caipirinha" >
+                                <img src="fotos/caipirinha.jpg" alt="Caipirinha">
+                            </a>
+                            <p>Caipirinha: Bebida brasileira feita com limão, açúcar, gelo e cachaça.</p>
+                        </div>
+                        <div class="carousel-item">
+                            <a href="pedidos.html?item=Suco natural" >
+                                <img src="fotos/suco.jpg" alt="Suco natural">
+                            </a>
+                            <p>Suco natural: Opção refrescante e saudável, feito com frutas frescas.</p>
+                        </div>
+                        <div class="carousel-item">
+                            <a href="pedidos.html?item=Refrigerante" >
+                                <img src="fotos/refrigerante.jpg" alt="Refrigerante">
+                            </a>
+                            <p>Refrigerante: Variedade de sabores para acompanhar suas refeições.</p>
+                        </div>
+                        <div class="carousel-item">
+                            <a href="pedidos.html?item=Café" >
+                                <img src="fotos/cafe.jpg" alt="Café">
+                            </a>
+                            <p>Café: Bebida quente para finalizar sua refeição com chave de ouro.</p>
+                        </div>
+                        <div class="carousel-item">
+                            <a href="pedidos.html?item=Whisky" >
+                                <img src="/fotos/whisky.avif" alt="Whisky">
+                            </a>
+                            <p>O Whisky é uma bebida para os amantes de sabores fortes.</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+        <!--------------------------------------------
+          *     Área do Footer                      
+          *------------------------------------------->
+        <footer>
+            <p class="footer-copy">© 2024</p>
+            <p class="footer-autor">Plataforma de Gestão de restaurante</p>
+            <p class="footer-autor">Todos direitos reservados</p>
+        </footer>
+        <script src="/carousel.js"></script>
+    </body>
+</html>

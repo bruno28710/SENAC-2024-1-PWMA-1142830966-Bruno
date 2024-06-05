@@ -1,0 +1,263 @@
+/* Resetando configuração padrão do CSS */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: #a52a2a;
+    color: #a00f2d;
+    /* cor principal do texto */
+}
+
+html {
+    font-family: Inter, sans-serif;
+    /* família de texto padrão */
+    font-weight: 500;
+    /* Peso padrão */
+}
+
+a {
+    color: #f5f5dc;
+    text-decoration: none;
+    /* Retirar decoração <a> */
+}
+
+a:hover {
+    color: black;
+    text-decoration: underline;
+}
+
+ul {
+    list-style: none;
+    /* Retirar decoração <li> */
+}
+
+nav {
+    max-width: 1120px;
+    /* largura máxima */
+    margin: auto;
+    padding: 1.5rem 10rem;
+    /* Acima/abaixo | Laterais */
+
+    display: flex;
+    flex-direction: row;
+    /* isto já o padrão */
+    justify-content: space-between;
+    /* Separa os 3 conjuntos de elementos */
+    align-items: center;
+    /* alinhar elementos ao centro (horizontal) */
+}
+
+.logo {
+    text-align: left;
+    color: #f5f5dc;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 2rem;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+.menu {
+    display: flex;
+    flex-direction: row;
+    gap: 1.5rem;
+    /* separa os elementos da linha */
+}
+
+/* ------------------Tag main */
+main {
+    display: flex;
+    flex-direction: column;
+}
+
+/* *------------------------------------------------------*
+   *                     Estilo para HERO                 *
+   *------------------------------------------------------*
+*/
+.hero {
+    max-width: 1120px;
+    /* largura máxima */
+    height: 60vh;
+    /* altura 60% proporcional à tela (navegador) */
+
+    display: flex;
+    /* organiza parte I e Parte II */
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 6rem;
+
+    padding: 0rem 2rem;
+    margin: auto;
+
+    overflow: clip;
+
+    align-items: center;
+}
+
+.hero-parte1-principal {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.hero-parte2-container-imagens {
+    max-width: 50%;
+    column-count: 4;
+    column-gap: 0.5rem;
+    margin: -1;
+}
+
+.hero-parte2-container-imagens>figure>img {
+    width: 400%;
+    border-radius: 1rem;
+}
+
+.container-hero {
+    background: #f5f5dc;
+}
+
+h1 {
+    font-family: Montserrat;
+    font-size: 3.5rem;
+    /* 56px = 3.5rem */
+    font-weight: 800;
+}
+
+hr {
+    border-color: #a00f2d;
+}
+
+.hero-subtitulo {
+    color: #a00f2d;
+    font-family: Inter;
+    font-size: 1.5rem;
+    /* 24px = 1.5rem */
+    font-weight: 400;
+}
+
+.receitas {
+    display: flex;
+    flex-direction: column;
+    max-width: 1300px;
+    padding: 3rem 2rem;
+    margin: auto;
+}
+
+.receita-header-cabecalho {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    margin-top: 5px;
+}
+
+.receita-hr {
+    border-color: #fff2e7;
+}
+
+.receita-header-titulo-h2 {
+    font-family: Montserrat;
+    font-size: 2rem;
+    font-weight: 700;
+    color: #fff2e7;
+}
+
+
+
+.carousel-container {
+    background: #f5f5dc;
+    padding: 2rem;
+    border-radius: 0.5rem;
+    margin-top: 2rem;
+    overflow: hidden; /* Esconde a barra de rolagem */
+    position: relative;
+    width: 100%;
+}
+
+.carousel {
+    display: flex;
+    gap: 2rem;
+}
+
+.carousel-item {
+    min-width: 250px;
+    background: #fff2e7;
+    padding: 1rem;
+    border-radius: 0.5rem;
+    text-align: center;
+}
+
+.carousel-item img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 0.5rem;
+}
+
+.carousel-container {
+    overflow: hidden;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.carousel {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+    margin-top: 20px;
+}
+
+.carousel-item {
+    flex: 0 0 auto;
+    transition: transform 0.5s ease-in-out, opacity 0.5s ease-in-out;
+    opacity: 0.6;
+    max-width: 200px;
+    margin: 0 10px;
+    text-align: center;
+}
+
+.carousel-item img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+.carousel-item.active {
+    transform: scale(1.2);
+    opacity: 1;
+}
+
+.carousel h3 {
+    margin: 0; /* Remove margem padrão */
+    padding-left: 20px; /* Adiciona um recuo para o título */
+    margin-bottom: 10px; /* Adiciona margem inferior para separar do conteúdo do carrossel */
+}
+
+
+/* Estilo para o rodapé */
+footer {
+    background-color: #f5f5dc;
+    /* Cor de fundo */
+    padding: 20px;
+    /* Espaçamento interno */
+    text-align: center;
+    /* Alinhamento de texto centralizado */
+}
+
+/* Estilo para o texto de direitos autorais */
+.footer-copy {
+    font-size: 14px;
+    /* Tamanho da fonte */
+    color: #a00f2d;
+    /* Cor do texto */
+}
+
+/* Estilo para o texto de descrição */
+.footer-autor {
+    font-size: 12px;
+    /* Tamanho da fonte */
+    color: #a00f2d;
+    /* Cor do texto */
+}

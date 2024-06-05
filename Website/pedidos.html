@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Gestão de Pedidos</title>
+<link rel="stylesheet" href="/styles1.css">
+</head>
+<body>
+<h1>Gestão de Pedidos</h1>
+
+<section id="pedidos">
+    <form id="form-pedidos">
+        <label for="item">Item:</label>
+        <select id="item" required>
+            <option value="">Selecione um item</option>
+            <!-- Opções de itens que podem ser pedidos -->
+        </select>
+        <label for="quantidade">Quantidade:</label>
+        <input type="number" id="quantidade" min="1" required>
+        <button type="submit">Adicionar Pedido</button>
+        <button type="button" id="selecionar-todos">Selecionar Todos</button>
+    </form>
+    <ul id="lista-pedidos"></ul>
+</section>
+
+<script src="/pedidos.js"></script>
+
+</body>
+
+</html>
